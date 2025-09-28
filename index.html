@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="main-title" tabindex="0">Your Name</h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <img src="profile.jpg" alt="Portrait of Your Name" width="120" height="120" class="profile-img">
+    </header>
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>Brief introduction about yourself, your skills, and your interests.</p>
+            <button id="about-btn" type="button">Consult About</button>
+            <div id="about-result" class="result"></div>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <img src="project1.jpg" alt="Screenshot of Project One" class="project-img">
+                    <p>Short description of your project.</p>
+                    <button class="project-btn" data-project="Project One">Consult Project</button>
+                    <div class="project-result"></div>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <img src="project2.jpg" alt="Screenshot of Project Two" class="project-img">
+                    <p>Short description of your project.</p>
+                    <button class="project-btn" data-project="Project Two">Consult Project</button>
+                    <div class="project-result"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank" rel="noopener" aria-label="Visit my LinkedIn profile">Your LinkedIn</a></p>
+            <button id="contact-btn" type="button">Consult Contact</button>
+            <div id="contact-result" class="result"></div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Your Name. All rights reserved.
+    </footer>
+</body>
+</html>
